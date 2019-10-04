@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta carset="utf-8">
+        <title>Vel'Koz | the Eye of the Void</title>
+        <link rel="stylesheet" href="./css/one_page_website.css">
+    </head>
+    <body>
+
+        <!-- NAV -->
+        <div>
+            <div>
+                <ul>
+                    <a href="#home" id="link"><li>HOME</li></a>
+                    <a href="#skins" id="link"><li>SKINS</li></a>
+                    <a href="#contact" id="link"><li>INFO</li></a>
+                </ul>
+            </div>
+        </div>
+        <!-- END NAV -->
+
+        <!-- HOME -->
+        <div id="home">
+            <div>
+                <div>
+                    <span>“to understand by unmaking”</span><em>- League of Legends</em>
+                </div>
+            </div>
+        </div>
+        <!-- END HOME -->
+
+        <!-- SKINS -->
+        <section>
+            <div id="skins">
+                <h1>SKINS</h1>
+            </div>
+        </section>
+        <!-- END GALLERY -->
+
+        <!-- Images used to open the lightbox -->
+        <div class="row">
+            <div class="column">
+            <img src="./Images/Thumb/Velkoz_0.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+            <img src="./Images/Thumb/Velkoz_1.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+            <img src="./Images/Thumb/Velkoz_2.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+            <img src="./Images/Thumb/Velkoz_3.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+        </div>
+        
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+        
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="./Images/Thumb/Velkoz_0.jpeg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="./Images/Thumb/Velkoz_1.jpeg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="./Images/Thumb/Velkoz_2.jpeg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="./Images/Thumb/Velkoz_3.jpeg" style="width:100%">
+                </div>
+            
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="./Images/Thumb/Velkoz_0.jpeg" onclick="currentSlide(1)" alt="Base Skin">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="./Images/Thumb/Velkoz_1.jpeg" onclick="currentSlide(2)" alt="Battlecast">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="./Images/Thumb/Velkoz_2.jpeg" onclick="currentSlide(3)" alt="ArcLight">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="./Images/Thumb/Velkoz_3.jpeg" onclick="currentSlide(4)" alt="Definitely Not">
+                </div>
+            </div>
+        </div>
+        <!-- RSVP -->
+        <section>
+            <div id="contact">
+                <div>
+                    <h1>Learn More!</h1>
+                    <div class="reservation">
+                        <h2><span>Learn more about Vel'Koz!</span>
+                            <br /> Gain pro insight to this champion!
+                        </h2>
+                        <p>
+                            Please provide us with your basic contact information.
+                        </p>
+                        <div>
+                            <form action="" method="post">
+                                <input class="rsvp" type="text" value="First Name">
+                                <input class="rsvp" type="text" value="Last Name">
+                                <input class="rsvp" type="text" value="Email Address">
+                                <input class="rsvp" type="text" value="Phone Number">
+                                <div class="form-spacer">
+                                    <label class="terms">Terms and Conditions</label>
+                                </div>
+                                <div>
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END RSVP -->
+        <script src="./JS/one_page_website.js"></script>
+        <!-- FOOTER -->
+        <div>
+            www.leagueoflegends.com &nbsp;|&nbsp; &copy; 2017
+        </div>
+        <!-- END FOOTER -->
+
+    </body>
+</html>
