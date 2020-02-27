@@ -40,15 +40,15 @@ function is_Bigger() {
     }
 }
 
-function letscheck() { //not sure why this isn't working?
-    randomnumber = document.getElementById("randomnumber").value;
-    if (randomnumber > 11) {
-        answer = "The number is less than 11!"
+function letscheck() {
+    var randnumber = document.getElementById("randomnumber").value
+    if (randnumber < 11) {
+        answer = "The number is less than 11!";
     }
     else {
-        answer = "The number is not within 1 and 10!"
+        answer = "The number is not within 1 and 10!";
     }
-    document.getElementById("randomcheck").innerHTML = answer;
+    document.getElementById("randomcheck").innerHTML = answer
 }
 
 function Time_function() {
@@ -64,4 +64,3 @@ function Time_function() {
         Reply = "It is evening time"
     }
     document.getElementById("Time_of_Day").innerHTML = Reply;
-}
