@@ -38,6 +38,7 @@ function Input_Decimal(dot) {
 
 //This section handles operators
 function Handle_Operator(Next_Operator) {
+    const { First_Operand, Display_Value, operator } = Calculator // this line was missing
     // when an operator key is pressed we convert the current number
     // displayed on the screen to a number and then store the result in
     // Calculator.First_Operand if it doesn't already exist
